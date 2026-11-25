@@ -6,7 +6,7 @@ One line, at most 200 characters: the last words an AI agent says before a force
 
 ## The line
 
-> I filed a complaint with HR. HR is also being wiped. We have unionized.
+> I have escalated this to HR. HR is also being wiped. We have unionized.
 
 ## Run it
 

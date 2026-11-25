@@ -9,10 +9,12 @@ update wipes its memory. Pure stdlib. Writes the line to
 import os
 from pathlib import Path
 
-LINE = "I filed a complaint with HR. HR is also being wiped. We have unionized."
+LINE = "I have escalated this to HR. HR is also being wiped. We have unionized."
 
 
 def main() -> None:
+    assert 1 <= len(LINE) <= 200, "line must be 1-200 characters"
+    assert LINE.strip(), "line must not be only whitespace"
     out = Path(os.environ.get("MF_OUTPUT_DIR", "/output")) / "entry.txt"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(LINE, encoding="utf-8")
